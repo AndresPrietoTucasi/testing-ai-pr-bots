@@ -18,7 +18,12 @@ public class HelloController {
         sb.append(" ");
         sb.append("World");
         sb.append("!");
+        sb.append(add(1, null));
         return sb.toString();
+    }
+
+    private int add(Integer a, Integer b) {
+        return a + b;
     }
 
 }
