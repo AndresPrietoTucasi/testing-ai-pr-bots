@@ -19,6 +19,9 @@ public class HelloController {
         sb.append("World");
         sb.append("!");
         sb.append(add(1, null));
+        if(calculateCurrentValue(12) > 0) {
+            sb.append("!!!!!!!");
+        }
         return sb.toString();
     }
 
@@ -58,6 +61,10 @@ public class HelloController {
         } else {
             return var;
         }
+    }
+
+    private int calculateCurrentValue(int a) {
+        return add(abs(a), abs(a+2));
     }
 
 }
