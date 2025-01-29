@@ -39,5 +39,12 @@ public class HelloController {
         }
     }
 
+    private int thisIsDeadCode(int var) {
+        if(var < 10) {
+            return 2^var;
+        } else {
+            return var/2;
+        }
+    }
 
 }
