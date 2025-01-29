@@ -47,4 +47,17 @@ public class HelloController {
         }
     }
 
+    /**
+     * multiplies something
+     * @param var
+     * @return
+     */
+    private int abs(int var) {
+        if(var < 0) {
+            return -1 * var;
+        } else {
+            return var;
+        }
+    }
+
 }
