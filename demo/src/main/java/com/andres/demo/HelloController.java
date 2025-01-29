@@ -26,4 +26,18 @@ public class HelloController {
         return a + b;
     }
 
+    @GetMapping("/hat")
+    public String hat() {
+        return madHatter(true);
+    }
+
+    private String madHatter(boolean hat) {
+        if(hat) {
+            return "Hat";
+        } else {
+            return buildAString();
+        }
+    }
+
+
 }
